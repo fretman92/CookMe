@@ -1,0 +1,57 @@
+.menu {
+	display:inline-block;
+	width:200px;
+	height: 400px;
+	background:blue;
+	vertical-align:middle;
+	margin:10px 10px;
+}.menu:hover {
+	background: green;
+}
+
+div.header {
+	border-bottom:1px black solid;
+}
+
+div.nav{
+	float:left;
+	background-color: black;
+	color: white;
+	padding: 15px;
+}
+
+div.corebody{
+	margin-left: 30px;
+	text-align: center;
+	height:auto;
+}
+div.footer{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	height:50px;
+	clear:both;
+	width:100%;
+	text-align: center;
+	background-color:grey;
+}
+div.footer div{
+	display:inline-block;
+}
+div.footer img{
+	height:50px;
+}
+
+li.added{
+	color:yellow;
+}
+
+#splashScreen {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	color:white;
+	background: url('images/splashscreen.png') no-repeat center white;
+}

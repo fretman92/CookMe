@@ -1,7 +1,11 @@
 package bean;
 
 import java.io.Serializable;
+import java.sql.*;
+
 import javax.faces.bean.ManagedBean;
+
+import database.ConnectionDb;
 
 @ManagedBean
 public class UserBean implements Serializable {
@@ -13,9 +17,15 @@ public class UserBean implements Serializable {
 	private String email;
 	private int age;
 
-	public UserBean() {}
+	public UserBean() {
 
-	public void setUsername(String u) {
+
+		
+	}
+
+	public void setUsername(String u) throws ClassNotFoundException, SQLException {
+		ConnectionDb a = new ConnectionDb();
+		a.openBb();
 		this.username = u;
 	}
 	public String getUsername() {
